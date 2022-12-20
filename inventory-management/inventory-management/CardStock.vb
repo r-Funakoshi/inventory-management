@@ -8,3 +8,16 @@ Public Class CardStock
     Public Property Image() As Image
 
 End Class
+
+Public Enum PokeRarity
+    UltraRare
+    SuperRare
+    Uncommon
+    Common
+End Enum
+
+Public Enum PokeKind
+    モンスター
+    トレーナー
+    エネルギー
+End Enum

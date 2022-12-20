@@ -29,7 +29,7 @@ Partial Class Results
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(43, 29)
+        Me.ComboBox1.Location = New System.Drawing.Point(659, 12)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(115, 26)
         Me.ComboBox1.TabIndex = 0
@@ -37,9 +37,9 @@ Partial Class Results
         'ListView1
         '
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(43, 88)
+        Me.ListView1.Location = New System.Drawing.Point(12, 56)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(270, 290)
+        Me.ListView1.Size = New System.Drawing.Size(776, 382)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '

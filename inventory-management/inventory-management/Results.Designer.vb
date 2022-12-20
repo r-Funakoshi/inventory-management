@@ -22,16 +22,19 @@ Partial Class Results
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(659, 12)
+        Me.ComboBox1.Location = New System.Drawing.Point(864, 12)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(115, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(115, 35)
         Me.ComboBox1.TabIndex = 0
         '
         'ListView1
@@ -39,15 +42,21 @@ Partial Class Results
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(12, 56)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(776, 382)
+        Me.ListView1.Size = New System.Drawing.Size(978, 410)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
         'Results
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1003, 478)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Results"
@@ -59,4 +68,5 @@ Partial Class Results
 
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents ImageList1 As ImageList
 End Class

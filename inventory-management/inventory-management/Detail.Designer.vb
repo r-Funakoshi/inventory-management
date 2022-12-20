@@ -39,54 +39,58 @@ Partial Class Detail
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 38)
+        Me.PictureBox1.Location = New System.Drawing.Point(25, 30)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(197, 233)
+        Me.PictureBox1.Size = New System.Drawing.Size(203, 246)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(244, 60)
+        Me.Label1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label1.Location = New System.Drawing.Point(235, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 18)
+        Me.Label1.Size = New System.Drawing.Size(84, 27)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "カード名"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(244, 103)
+        Me.Label2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.Location = New System.Drawing.Point(235, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(112, 18)
+        Me.Label2.Size = New System.Drawing.Size(156, 27)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "カードレアリティ"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(244, 152)
+        Me.Label4.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label4.Location = New System.Drawing.Point(235, 158)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(85, 18)
+        Me.Label4.Size = New System.Drawing.Size(102, 27)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "カード種類"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(244, 212)
+        Me.Label6.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label6.Location = New System.Drawing.Point(235, 218)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(85, 18)
+        Me.Label6.Size = New System.Drawing.Size(102, 27)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "カード状態"
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Button1.Location = New System.Drawing.Point(223, 378)
+        Me.Button1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Button1.Location = New System.Drawing.Point(201, 377)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(152, 44)
+        Me.Button1.Size = New System.Drawing.Size(206, 61)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "カートへ"
         Me.Button1.UseVisualStyleBackColor = True
@@ -94,49 +98,54 @@ Partial Class Detail
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label8.Location = New System.Drawing.Point(73, 321)
+        Me.Label8.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label8.Location = New System.Drawing.Point(80, 301)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(105, 36)
+        Me.Label8.Size = New System.Drawing.Size(131, 54)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "金額："
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(378, 95)
+        Me.ComboBox1.Location = New System.Drawing.Point(394, 109)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 26)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 35)
         Me.ComboBox1.TabIndex = 11
         '
         'ComboBox2
         '
+        Me.ComboBox2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(378, 152)
+        Me.ComboBox2.Location = New System.Drawing.Point(394, 158)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 26)
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 35)
         Me.ComboBox2.TabIndex = 12
         '
         'ComboBox3
         '
+        Me.ComboBox3.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(378, 212)
+        Me.ComboBox3.Location = New System.Drawing.Point(394, 210)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 26)
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 35)
         Me.ComboBox3.TabIndex = 13
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(213, 332)
+        Me.TextBox1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(220, 298)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(173, 25)
+        Me.TextBox1.Size = New System.Drawing.Size(173, 61)
         Me.TextBox1.TabIndex = 14
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(378, 53)
+        Me.TextBox2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(394, 59)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(209, 25)
+        Me.TextBox2.Size = New System.Drawing.Size(209, 34)
         Me.TextBox2.TabIndex = 15
         '
         'Detail

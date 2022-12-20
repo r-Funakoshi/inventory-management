@@ -1,0 +1,16 @@
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\bin\Debug\inventory-management.exe.config
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\bin\Debug\inventory-management.exe
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\bin\Debug\inventory-management.pdb
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\bin\Debug\inventory-management.xml
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.vbproj.AssemblyReference.cache
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.vbproj.SuggestedBindingRedirects.cache
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory_management.Resources.resources
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.vbproj.GenerateResource.cache
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.vbproj.CoreCompileInputs.cache
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.exe
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.xml
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory-management.pdb
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory_management.Results.resources
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory_management.Detail.resources
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory_management.Addition.resources
+C:\Users\risa-funakoshi\Documents\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory_management.Search.resources

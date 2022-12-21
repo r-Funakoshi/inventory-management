@@ -61,7 +61,7 @@ Partial Class Results
         Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Results"
         Me.ShowIcon = False
-        Me.Text = "Results"
+        Me.Text = "検索結果"
         Me.ResumeLayout(False)
 
     End Sub

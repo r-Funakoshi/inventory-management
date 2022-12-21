@@ -1,47 +1,57 @@
 ﻿Option Strict On
 
 Public Class Results
+
+    ''' <summary>
+    ''' 検索結果一覧表示画面 ロード時の処理
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub Results_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim _imageDir = "C:\Users\risa-funakoshi\Documents\repos\inventory-management\images" ' 画像ディレクトリ
-        Dim _jpgFiles() =
-        System.IO.Directory.GetFiles(_imageDir, "*.jpg")
+        Dim imageDir = "C:\Users\risa-funakoshi\Documents\repos\inventory-management\images" ' 画像ディレクトリ
+        Dim jpgFiles() =
+        System.IO.Directory.GetFiles(imageDir, "*.jpg")
 
-        Dim _width = 120
-        Dim _height = 100
+        Dim width = 120
+        Dim height = 100
 
-        ImageList1.ImageSize = New Size(_width, _height)
+        ImageList1.ImageSize = New Size(width, height)
         ListView1.LargeImageList = ImageList1
 
-        For i = 0 To _jpgFiles.Length - 1
-            Dim _original = Bitmap.FromFile(_jpgFiles(i))
-            Dim _thumbnail = createThumbnail(_original, _width, _height)
+        For i = 0 To jpgFiles.Length - 1
+            Dim original = Bitmap.FromFile(jpgFiles(i))
+            Dim thumbnail = createThumbnail(original, width, height)
 
-            ImageList1.Images.Add(_thumbnail)
-            ListView1.Items.Add(_jpgFiles(i), i)
+            ImageList1.Images.Add(thumbnail)
+            ListView1.Items.Add(jpgFiles(i), i)
 
-            _original.Dispose()
-            _thumbnail.Dispose()
+            original.Dispose()
+            thumbnail.Dispose()
         Next
 
     End Sub
 
-    Function createThumbnail(ByVal image As Image, ByVal _width As Integer, ByVal _height As Integer) As Image
-        Dim _canvas As New Bitmap(_width, _height)
+    ''' <summary>
+    ''' 画像サイズを調整したサムネイル画像の作成を行う
+    ''' </summary>
+    ''' <param name="image"></param>
+    ''' <param name="width"></param>
+    ''' <param name="height"></param>
+    ''' <returns></returns>
+    Function createThumbnail(image As Image, width As Integer, height As Integer) As Image
+        Dim canvas As New Bitmap(width, height)
+        Dim draw = Graphics.FromImage(canvas)
+        Dim downsizeWidth = CType(image.Width * (height / image.Height), Integer)
+        Dim downsizeHeight = CType(image.Height * (height / image.Height), Integer)
 
-        Dim _draw = Graphics.FromImage(_canvas)
+        draw.DrawImage(image, (width - downsizeWidth) \ 2, (height - downsizeHeight) \ 2, downsizeWidth, downsizeHeight)
+        draw.Dispose()
 
-        Dim _fw = CType(_width, Double) / CType(image.Width, Double)
-        Dim _fh = CType(_height, Double) / CType(image.Height, Double)
-        Dim _scale = Math.Min(_fw, _fh)
-
-        Dim _w2 = CType(image.Width * _scale, Integer)
-        Dim _h2 = CType(image.Height * _scale, Integer)
-
-        _draw.DrawImage(image, (_width - _w2) \ 2, (_height - _h2) \ 2, _w2, _h2)
-        _draw.Dispose()
-
-        Return _canvas
+        MessageBox.Show(CType(image.Width, String))
+        MessageBox.Show(CType(height, String))
+        MessageBox.Show(CType(image.Height, String))
+        Return canvas
     End Function
 
 End Class

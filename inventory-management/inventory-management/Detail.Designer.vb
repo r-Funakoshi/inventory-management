@@ -49,7 +49,7 @@ Partial Class Detail
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label1.Location = New System.Drawing.Point(235, 66)
+        Me.Label1.Location = New System.Drawing.Point(250, 60)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 27)
         Me.Label1.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class Detail
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(235, 109)
+        Me.Label2.Location = New System.Drawing.Point(250, 115)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 27)
         Me.Label2.TabIndex = 2
@@ -69,7 +69,7 @@ Partial Class Detail
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label4.Location = New System.Drawing.Point(235, 158)
+        Me.Label4.Location = New System.Drawing.Point(250, 170)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(102, 27)
         Me.Label4.TabIndex = 4
@@ -79,7 +79,7 @@ Partial Class Detail
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label6.Location = New System.Drawing.Point(235, 218)
+        Me.Label6.Location = New System.Drawing.Point(250, 225)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(102, 27)
         Me.Label6.TabIndex = 6
@@ -88,7 +88,7 @@ Partial Class Detail
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Button1.Location = New System.Drawing.Point(201, 377)
+        Me.Button1.Location = New System.Drawing.Point(244, 377)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(206, 61)
         Me.Button1.TabIndex = 7
@@ -99,7 +99,7 @@ Partial Class Detail
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label8.Location = New System.Drawing.Point(80, 301)
+        Me.Label8.Location = New System.Drawing.Point(97, 301)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(131, 54)
         Me.Label8.TabIndex = 9
@@ -109,7 +109,7 @@ Partial Class Detail
         '
         Me.ComboBox1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(394, 109)
+        Me.ComboBox1.Location = New System.Drawing.Point(420, 108)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 35)
         Me.ComboBox1.TabIndex = 11
@@ -118,7 +118,7 @@ Partial Class Detail
         '
         Me.ComboBox2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(394, 158)
+        Me.ComboBox2.Location = New System.Drawing.Point(420, 163)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 35)
         Me.ComboBox2.TabIndex = 12
@@ -127,7 +127,7 @@ Partial Class Detail
         '
         Me.ComboBox3.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(394, 210)
+        Me.ComboBox3.Location = New System.Drawing.Point(420, 218)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(121, 35)
         Me.ComboBox3.TabIndex = 13
@@ -135,24 +135,24 @@ Partial Class Detail
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(220, 298)
+        Me.TextBox1.Location = New System.Drawing.Point(244, 298)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(173, 61)
+        Me.TextBox1.Size = New System.Drawing.Size(206, 61)
         Me.TextBox1.TabIndex = 14
         '
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(394, 59)
+        Me.TextBox2.Location = New System.Drawing.Point(420, 53)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(209, 34)
+        Me.TextBox2.Size = New System.Drawing.Size(237, 34)
         Me.TextBox2.TabIndex = 15
         '
         'Detail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(616, 450)
+        Me.ClientSize = New System.Drawing.Size(679, 450)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ComboBox3)
@@ -166,7 +166,7 @@ Partial Class Detail
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Detail"
-        Me.Text = "Detail"
+        Me.Text = "カード詳細"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

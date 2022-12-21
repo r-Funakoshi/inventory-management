@@ -9,9 +9,9 @@ Public Class Results
     ''' <param name="e"></param>
     Private Sub Results_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim imageDir = "C:\Users\risa-funakoshi\Documents\repos\inventory-management\images" ' 画像ディレクトリ
+        Dim imageDirectory = "C:\Users\risa-funakoshi\Documents\repos\inventory-management\images" ' 画像ディレクトリ
         Dim jpgFiles() =
-        System.IO.Directory.GetFiles(imageDir, "*.jpg")
+        System.IO.Directory.GetFiles(imageDirectory, "*.jpg")
 
         Dim width = 120
         Dim height = 100
@@ -39,7 +39,7 @@ Public Class Results
     ''' <param name="width"></param>
     ''' <param name="height"></param>
     ''' <returns></returns>
-    Function createThumbnail(image As Image, width As Integer, height As Integer) As Image
+    Function CreateThumbnail(image As Image, width As Integer, height As Integer) As Image
         Dim canvas As New Bitmap(width, height)
         Dim draw = Graphics.FromImage(canvas)
         Dim downsizeWidth = CType(image.Width * (height / image.Height), Integer)

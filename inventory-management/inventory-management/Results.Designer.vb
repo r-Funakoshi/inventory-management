@@ -32,7 +32,7 @@ Partial Class Results
         '
         Me.ComboBox1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(864, 12)
+        Me.ComboBox1.Location = New System.Drawing.Point(875, 12)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(115, 35)
         Me.ComboBox1.TabIndex = 0

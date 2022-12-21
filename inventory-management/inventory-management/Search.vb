@@ -3,7 +3,7 @@
 Public Class Search
 
     ''' <summary>
-    ''' 
+    ''' 一覧画面を開く
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>

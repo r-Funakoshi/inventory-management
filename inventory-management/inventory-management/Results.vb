@@ -16,15 +16,16 @@ Public Class Results
         Dim width = 120
         Dim height = 100
 
+        'イメージリストのサイズを指定
         ImageList1.ImageSize = New Size(width, height)
-        ListView1.LargeImageList = ImageList1
+        ResultListView.LargeImageList = ImageList1
 
         For i = 0 To jpgFiles.Length - 1
             Dim original = Bitmap.FromFile(jpgFiles(i))
             Dim thumbnail = createThumbnail(original, width, height)
 
             ImageList1.Images.Add(thumbnail)
-            ListView1.Items.Add(jpgFiles(i), i)
+            ResultListView.Items.Add(jpgFiles(i), i)
 
             original.Dispose()
             thumbnail.Dispose()

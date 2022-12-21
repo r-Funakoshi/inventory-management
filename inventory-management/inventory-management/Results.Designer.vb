@@ -23,28 +23,28 @@ Partial Class Results
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.SortComboBox = New System.Windows.Forms.ComboBox()
+        Me.ResultListView = New System.Windows.Forms.ListView()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'SortComboBox
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(875, 12)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(115, 35)
-        Me.ComboBox1.TabIndex = 0
+        Me.SortComboBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.SortComboBox.FormattingEnabled = True
+        Me.SortComboBox.Location = New System.Drawing.Point(875, 12)
+        Me.SortComboBox.Name = "SortComboBox"
+        Me.SortComboBox.Size = New System.Drawing.Size(115, 35)
+        Me.SortComboBox.TabIndex = 0
         '
-        'ListView1
+        'ResultListView
         '
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(12, 56)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(978, 410)
-        Me.ListView1.TabIndex = 2
-        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ResultListView.HideSelection = False
+        Me.ResultListView.Location = New System.Drawing.Point(12, 56)
+        Me.ResultListView.Name = "ResultListView"
+        Me.ResultListView.Size = New System.Drawing.Size(978, 410)
+        Me.ResultListView.TabIndex = 2
+        Me.ResultListView.UseCompatibleStateImageBehavior = False
         '
         'ImageList1
         '
@@ -57,8 +57,8 @@ Partial Class Results
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1003, 478)
-        Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.ResultListView)
+        Me.Controls.Add(Me.SortComboBox)
         Me.Name = "Results"
         Me.ShowIcon = False
         Me.Text = "検索結果"
@@ -66,7 +66,7 @@ Partial Class Results
 
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents SortComboBox As ComboBox
+    Friend WithEvents ResultListView As ListView
     Friend WithEvents ImageList1 As ImageList
 End Class

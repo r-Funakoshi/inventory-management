@@ -22,167 +22,167 @@ Partial Class Detail
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CardPictureBox = New System.Windows.Forms.PictureBox()
+        Me.CardNameLabel = New System.Windows.Forms.Label()
+        Me.CardRarityLabel = New System.Windows.Forms.Label()
+        Me.CardKindLabel = New System.Windows.Forms.Label()
+        Me.CardStatusLabel = New System.Windows.Forms.Label()
+        Me.CartButton = New System.Windows.Forms.Button()
+        Me.PriceLabel = New System.Windows.Forms.Label()
+        Me.CardRarityComboBox = New System.Windows.Forms.ComboBox()
+        Me.CardKindComboBox = New System.Windows.Forms.ComboBox()
+        Me.CardStatusComboBox = New System.Windows.Forms.ComboBox()
+        Me.PriceTextBox = New System.Windows.Forms.TextBox()
+        Me.CardNameTextBox = New System.Windows.Forms.TextBox()
+        CType(Me.CardPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'CardPictureBox
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 30)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(203, 246)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.CardPictureBox.Location = New System.Drawing.Point(25, 30)
+        Me.CardPictureBox.Name = "CardPictureBox"
+        Me.CardPictureBox.Size = New System.Drawing.Size(203, 246)
+        Me.CardPictureBox.TabIndex = 0
+        Me.CardPictureBox.TabStop = False
         '
-        'Label1
+        'CardNameLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label1.Location = New System.Drawing.Point(250, 60)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 27)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "カード名"
+        Me.CardNameLabel.AutoSize = True
+        Me.CardNameLabel.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardNameLabel.Location = New System.Drawing.Point(250, 60)
+        Me.CardNameLabel.Name = "CardNameLabel"
+        Me.CardNameLabel.Size = New System.Drawing.Size(84, 27)
+        Me.CardNameLabel.TabIndex = 1
+        Me.CardNameLabel.Text = "カード名"
         '
-        'Label2
+        'CardRarityLabel
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(250, 115)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(156, 27)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "カードレアリティ"
+        Me.CardRarityLabel.AutoSize = True
+        Me.CardRarityLabel.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardRarityLabel.Location = New System.Drawing.Point(250, 115)
+        Me.CardRarityLabel.Name = "CardRarityLabel"
+        Me.CardRarityLabel.Size = New System.Drawing.Size(156, 27)
+        Me.CardRarityLabel.TabIndex = 2
+        Me.CardRarityLabel.Text = "カードレアリティ"
         '
-        'Label4
+        'CardKindLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label4.Location = New System.Drawing.Point(250, 170)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 27)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "カード種類"
+        Me.CardKindLabel.AutoSize = True
+        Me.CardKindLabel.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardKindLabel.Location = New System.Drawing.Point(250, 170)
+        Me.CardKindLabel.Name = "CardKindLabel"
+        Me.CardKindLabel.Size = New System.Drawing.Size(102, 27)
+        Me.CardKindLabel.TabIndex = 4
+        Me.CardKindLabel.Text = "カード種類"
         '
-        'Label6
+        'CardStatusLabel
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label6.Location = New System.Drawing.Point(250, 225)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(102, 27)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "カード状態"
+        Me.CardStatusLabel.AutoSize = True
+        Me.CardStatusLabel.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardStatusLabel.Location = New System.Drawing.Point(250, 225)
+        Me.CardStatusLabel.Name = "CardStatusLabel"
+        Me.CardStatusLabel.Size = New System.Drawing.Size(102, 27)
+        Me.CardStatusLabel.TabIndex = 6
+        Me.CardStatusLabel.Text = "カード状態"
         '
-        'Button1
+        'CartButton
         '
-        Me.Button1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Button1.Location = New System.Drawing.Point(244, 377)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(206, 61)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "カートへ"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.CartButton.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CartButton.Location = New System.Drawing.Point(244, 377)
+        Me.CartButton.Name = "CartButton"
+        Me.CartButton.Size = New System.Drawing.Size(206, 61)
+        Me.CartButton.TabIndex = 7
+        Me.CartButton.Text = "カートへ"
+        Me.CartButton.UseVisualStyleBackColor = True
         '
-        'Label8
+        'PriceLabel
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label8.Location = New System.Drawing.Point(97, 301)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(131, 54)
-        Me.Label8.TabIndex = 9
-        Me.Label8.Text = "金額："
+        Me.PriceLabel.AutoSize = True
+        Me.PriceLabel.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.PriceLabel.Location = New System.Drawing.Point(97, 301)
+        Me.PriceLabel.Name = "PriceLabel"
+        Me.PriceLabel.Size = New System.Drawing.Size(131, 54)
+        Me.PriceLabel.TabIndex = 9
+        Me.PriceLabel.Text = "金額："
         '
-        'ComboBox1
+        'CardRarityComboBox
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(420, 108)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 35)
-        Me.ComboBox1.TabIndex = 11
+        Me.CardRarityComboBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardRarityComboBox.FormattingEnabled = True
+        Me.CardRarityComboBox.Location = New System.Drawing.Point(420, 108)
+        Me.CardRarityComboBox.Name = "CardRarityComboBox"
+        Me.CardRarityComboBox.Size = New System.Drawing.Size(121, 35)
+        Me.CardRarityComboBox.TabIndex = 11
         '
-        'ComboBox2
+        'CardKindComboBox
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(420, 163)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 35)
-        Me.ComboBox2.TabIndex = 12
+        Me.CardKindComboBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardKindComboBox.FormattingEnabled = True
+        Me.CardKindComboBox.Location = New System.Drawing.Point(420, 163)
+        Me.CardKindComboBox.Name = "CardKindComboBox"
+        Me.CardKindComboBox.Size = New System.Drawing.Size(121, 35)
+        Me.CardKindComboBox.TabIndex = 12
         '
-        'ComboBox3
+        'CardStatusComboBox
         '
-        Me.ComboBox3.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(420, 218)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 35)
-        Me.ComboBox3.TabIndex = 13
+        Me.CardStatusComboBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardStatusComboBox.FormattingEnabled = True
+        Me.CardStatusComboBox.Location = New System.Drawing.Point(420, 218)
+        Me.CardStatusComboBox.Name = "CardStatusComboBox"
+        Me.CardStatusComboBox.Size = New System.Drawing.Size(121, 35)
+        Me.CardStatusComboBox.TabIndex = 13
         '
-        'TextBox1
+        'PriceTextBox
         '
-        Me.TextBox1.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(244, 298)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(206, 61)
-        Me.TextBox1.TabIndex = 14
+        Me.PriceTextBox.Font = New System.Drawing.Font("メイリオ", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.PriceTextBox.Location = New System.Drawing.Point(244, 298)
+        Me.PriceTextBox.Name = "PriceTextBox"
+        Me.PriceTextBox.Size = New System.Drawing.Size(206, 61)
+        Me.PriceTextBox.TabIndex = 14
         '
-        'TextBox2
+        'CardNameTextBox
         '
-        Me.TextBox2.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(420, 53)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(237, 34)
-        Me.TextBox2.TabIndex = 15
+        Me.CardNameTextBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.CardNameTextBox.Location = New System.Drawing.Point(420, 53)
+        Me.CardNameTextBox.Name = "CardNameTextBox"
+        Me.CardNameTextBox.Size = New System.Drawing.Size(237, 34)
+        Me.CardNameTextBox.TabIndex = 15
         '
         'Detail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(679, 450)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.CardNameTextBox)
+        Me.Controls.Add(Me.PriceTextBox)
+        Me.Controls.Add(Me.CardStatusComboBox)
+        Me.Controls.Add(Me.CardKindComboBox)
+        Me.Controls.Add(Me.CardRarityComboBox)
+        Me.Controls.Add(Me.PriceLabel)
+        Me.Controls.Add(Me.CartButton)
+        Me.Controls.Add(Me.CardStatusLabel)
+        Me.Controls.Add(Me.CardKindLabel)
+        Me.Controls.Add(Me.CardRarityLabel)
+        Me.Controls.Add(Me.CardNameLabel)
+        Me.Controls.Add(Me.CardPictureBox)
         Me.Name = "Detail"
         Me.Text = "カード詳細"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CardPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label8 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents CardPictureBox As PictureBox
+    Friend WithEvents CardNameLabel As Label
+    Friend WithEvents CardRarityLabel As Label
+    Friend WithEvents CardKindLabel As Label
+    Friend WithEvents CardStatusLabel As Label
+    Friend WithEvents CartButton As Button
+    Friend WithEvents PriceLabel As Label
+    Friend WithEvents CardRarityComboBox As ComboBox
+    Friend WithEvents CardKindComboBox As ComboBox
+    Friend WithEvents CardStatusComboBox As ComboBox
+    Friend WithEvents PriceTextBox As TextBox
+    Friend WithEvents CardNameTextBox As TextBox
 End Class

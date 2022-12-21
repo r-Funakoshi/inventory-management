@@ -7,7 +7,7 @@ Public Class Search
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         Dim search As New Results()
 
         search.ShowDialog(Me)

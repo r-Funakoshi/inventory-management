@@ -48,9 +48,6 @@ Public Class Results
         draw.DrawImage(image, (width - downsizeWidth) \ 2, (height - downsizeHeight) \ 2, downsizeWidth, downsizeHeight)
         draw.Dispose()
 
-        MessageBox.Show(CType(image.Width, String))
-        MessageBox.Show(CType(height, String))
-        MessageBox.Show(CType(image.Height, String))
         Return canvas
     End Function
 

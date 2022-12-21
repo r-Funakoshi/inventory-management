@@ -37,7 +37,7 @@ Partial Class Search
         Me.EnergyCheckBox = New System.Windows.Forms.CheckBox()
         Me.StatusLabel = New System.Windows.Forms.Label()
         Me.BeautyProductsCheckBox = New System.Windows.Forms.CheckBox()
-        Me.UsedCheckBox = New System.Windows.Forms.CheckBox()
+        Me.UsedProductsCheckBox = New System.Windows.Forms.CheckBox()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.CartButton = New System.Windows.Forms.Button()
@@ -199,16 +199,16 @@ Partial Class Search
         Me.BeautyProductsCheckBox.Text = "美品"
         Me.BeautyProductsCheckBox.UseVisualStyleBackColor = True
         '
-        'UsedCheckBox
+        'UsedProductsCheckBox
         '
-        Me.UsedCheckBox.AutoSize = True
-        Me.UsedCheckBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.UsedCheckBox.Location = New System.Drawing.Point(300, 250)
-        Me.UsedCheckBox.Name = "UsedCheckBox"
-        Me.UsedCheckBox.Size = New System.Drawing.Size(74, 31)
-        Me.UsedCheckBox.TabIndex = 15
-        Me.UsedCheckBox.Text = "中古"
-        Me.UsedCheckBox.UseVisualStyleBackColor = True
+        Me.UsedProductsCheckBox.AutoSize = True
+        Me.UsedProductsCheckBox.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.UsedProductsCheckBox.Location = New System.Drawing.Point(300, 250)
+        Me.UsedProductsCheckBox.Name = "UsedProductsCheckBox"
+        Me.UsedProductsCheckBox.Size = New System.Drawing.Size(74, 31)
+        Me.UsedProductsCheckBox.TabIndex = 15
+        Me.UsedProductsCheckBox.Text = "中古"
+        Me.UsedProductsCheckBox.UseVisualStyleBackColor = True
         '
         'SearchButton
         '
@@ -259,7 +259,7 @@ Partial Class Search
         Me.Controls.Add(Me.CartButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.SearchButton)
-        Me.Controls.Add(Me.UsedCheckBox)
+        Me.Controls.Add(Me.UsedProductsCheckBox)
         Me.Controls.Add(Me.BeautyProductsCheckBox)
         Me.Controls.Add(Me.StatusLabel)
         Me.Controls.Add(Me.EnergyCheckBox)
@@ -297,7 +297,7 @@ Partial Class Search
     Friend WithEvents EnergyCheckBox As CheckBox
     Friend WithEvents StatusLabel As Label
     Friend WithEvents BeautyProductsCheckBox As CheckBox
-    Friend WithEvents UsedCheckBox As CheckBox
+    Friend WithEvents UsedProductsCheckBox As CheckBox
     Friend WithEvents SearchButton As Button
     Friend WithEvents ClearButton As Button
     Friend WithEvents CartButton As Button

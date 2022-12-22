@@ -1,6 +1,54 @@
 ﻿Option Strict On
 
-Public Class Results
+Imports System.Data.SQLite
+Imports System.Drawing.Text
+Imports System.Security.Cryptography.X509Certificates
+
+Public Class ResultForm
+    Public Property ConnectString As String = "Data Source = card_stock.db"
+
+    'データ追加、削除用
+    'Public Sub ExecuteNoneQuery(connectString As String, sql As String)
+    '    'インスタンス生成
+    '    Using connection = New SQLiteConnection(connectString)
+    '        'DB接続
+    '        connection.Open()
+    '        'コマンドのインスタンス化
+    '        Using cmd = New SQLiteCommand(connection)
+    '            cmd.CommandText = sql
+    '            cmd.ExecuteNonQuery()
+    '        End Using
+    '    End Using
+    'End Sub
+
+    ''' <summary>
+    ''' データベースのデータを取得
+    ''' </summary>
+    ''' <returns></returns>
+    Public Function ListDisplay() As DataTable
+
+        Dim dt As DataTable = New DataTable
+
+        Using connection = New SQLiteConnection(ConnectString)
+            connection.Open()
+
+            Using cmd = New SQLiteCommand(connection)
+                cmd.CommandText = "
+SELECT 
+  name
+, image 
+FROM card_stock
+;"
+                cmd.ExecuteNonQuery()
+                ' DataAdapterの生成
+                Dim da = New SQLiteDataAdapter(cmd)
+                ' データベースからデータを取得
+                da.Fill(dt)
+            End Using
+        End Using
+        Return dt
+
+    End Function
 
     ''' <summary>
     ''' 検索結果一覧表示画面 ロード時の処理
@@ -22,7 +70,7 @@ Public Class Results
 
         For i = 0 To jpgFiles.Length - 1
             Dim original = Bitmap.FromFile(jpgFiles(i))
-            Dim thumbnail = createThumbnail(original, width, height)
+            Dim thumbnail = CreateThumbnail(original, width, height)
 
             ImageList1.Images.Add(thumbnail)
             ResultListView.Items.Add(jpgFiles(i), i)

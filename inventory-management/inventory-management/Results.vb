@@ -20,12 +20,12 @@ Public Class ResultForm
     'End Sub
 
     ''' <summary>
-    ''' データベースのデータを取得
+    ''' 登録されている cardstock から名前と画像のデータを DataTable で取得
     ''' </summary>
     ''' <returns></returns>
-    Public Function ListCards() As DataTable
+    Public Function GetCards() As DataTable
 
-        Dim dt As DataTable = New DataTable
+        Dim dt = New DataTable
 
         Using connection = New SQLiteConnection(ConnectString)
             connection.Open()
@@ -39,9 +39,9 @@ FROM card_stock
 ;"
                 cmd.ExecuteNonQuery()
                 ' DataAdapterの生成
-                Dim da = New SQLiteDataAdapter(cmd)
+                Dim dataAdapter = New SQLiteDataAdapter(cmd)
                 ' データベースからデータを取得
-                da.Fill(dt)
+                dataAdapter.Fill(dt)
             End Using
         End Using
         Return dt
@@ -57,19 +57,17 @@ FROM card_stock
 
         Dim width = 120
         Dim height = 100
-        Dim connection = New Object
-        Dim tableCards = ListCards()
-        Dim cardCount = tableCards.Rows.Count
-
         'イメージリストのサイズを指定
         ResultImageList.ImageSize = New Size(width, height)
         ResultListView.LargeImageList = ResultImageList
 
         Dim imgconv As New ImageConverter()
 
+        Dim tableCards = GetCards()
+        Dim cardCount = tableCards.Rows.Count
         For i = 0 To cardCount - 1
             Dim cardName = CType(tableCards.Rows(i)(0), String)
-            Dim img As Image = CType(imgconv.ConvertFrom(tableCards.Rows(i)(1)), Image)
+            Dim img = CType(imgconv.ConvertFrom(tableCards.Rows(i)(1)), Image)
             Dim thumbnail = CreateThumbnail(img, width, height)
 
             ResultImageList.Images.Add(thumbnail)

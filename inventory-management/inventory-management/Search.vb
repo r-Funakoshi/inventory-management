@@ -1,4 +1,5 @@
 ﻿Option Strict On
+Imports System.Security.Cryptography
 
 Public Class Search
 
@@ -8,7 +9,7 @@ Public Class Search
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        Dim search As New Results()
+        Dim search As New ResultForm()
 
         search.ShowDialog(Me)
         search.Dispose()

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Results
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class ResultForm
     Inherits System.Windows.Forms.Form
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,12 @@ Partial Class Results
     'メモ: 以下のプロシージャは Windows フォーム デザイナーで必要です。
     'Windows フォーム デザイナーを使用して変更できます。  
     'コード エディターを使って変更しないでください。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.SortComboBox = New System.Windows.Forms.ComboBox()
         Me.ResultListView = New System.Windows.Forms.ListView()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.ResultImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
         'SortComboBox
@@ -46,20 +46,20 @@ Partial Class Results
         Me.ResultListView.TabIndex = 2
         Me.ResultListView.UseCompatibleStateImageBehavior = False
         '
-        'ImageList1
+        'ResultImageList
         '
-        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ResultImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ResultImageList.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ResultImageList.TransparentColor = System.Drawing.Color.Transparent
         '
-        'Results
+        'ResultForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1003, 478)
         Me.Controls.Add(Me.ResultListView)
         Me.Controls.Add(Me.SortComboBox)
-        Me.Name = "Results"
+        Me.Name = "ResultForm"
         Me.ShowIcon = False
         Me.Text = "検索結果"
         Me.ResumeLayout(False)
@@ -68,5 +68,5 @@ Partial Class Results
 
     Friend WithEvents SortComboBox As ComboBox
     Friend WithEvents ResultListView As ListView
-    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents ResultImageList As ImageList
 End Class

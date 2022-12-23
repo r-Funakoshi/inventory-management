@@ -1,6 +1,53 @@
 ﻿Option Strict On
 
-Public Class Results
+Imports System.Data.SQLite
+
+Public Class ResultForm
+    Public Property ConnectString As String = "Data Source = card_stock.db"
+
+    'データ追加、削除用
+    'Public Sub ExecuteNoneQuery(connectString As String, sql As String)
+    '    'インスタンス生成
+    '    Using connection = New SQLiteConnection(connectString)
+    '        'DB接続
+    '        connection.Open()
+    '        'コマンドのインスタンス化
+    '        Using cmd = New SQLiteCommand(connection)
+    '            cmd.CommandText = sql
+    '            cmd.ExecuteNonQuery()
+    '        End Using
+    '    End Using
+    'End Sub
+
+    ''' <summary>
+    ''' 登録されている cardstock から名前と画像のデータを DataTable で取得
+    ''' </summary>
+    ''' <returns></returns>
+    Public Function GetCards() As DataTable
+
+        Dim dt = New DataTable
+
+        Using connection = New SQLiteConnection(ConnectString)
+            connection.Open()
+
+            Using cmd = New SQLiteCommand(connection)
+                cmd.CommandText = "
+SELECT 
+  name
+, status
+, image 
+FROM card_stock
+;"
+                cmd.ExecuteNonQuery()
+                ' DataAdapterの生成
+                Dim dataAdapter = New SQLiteDataAdapter(cmd)
+                ' データベースからデータを取得
+                dataAdapter.Fill(dt)
+            End Using
+        End Using
+        Return dt
+
+    End Function
 
     ''' <summary>
     ''' 検索結果一覧表示画面 ロード時の処理
@@ -9,25 +56,25 @@ Public Class Results
     ''' <param name="e"></param>
     Private Sub Results_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim imageDirectory = "C:\Users\risa-funakoshi\Documents\repos\inventory-management\images" ' 画像ディレクトリ
-        Dim jpgFiles() =
-        System.IO.Directory.GetFiles(imageDirectory, "*.jpg")
-
         Dim width = 120
         Dim height = 100
-
         'イメージリストのサイズを指定
-        ImageList1.ImageSize = New Size(width, height)
-        ResultListView.LargeImageList = ImageList1
+        ResultImageList.ImageSize = New Size(width, height)
+        ResultListView.LargeImageList = ResultImageList
 
-        For i = 0 To jpgFiles.Length - 1
-            Dim original = Bitmap.FromFile(jpgFiles(i))
-            Dim thumbnail = createThumbnail(original, width, height)
+        Dim imgconv As New ImageConverter()
 
-            ImageList1.Images.Add(thumbnail)
-            ResultListView.Items.Add(jpgFiles(i), i)
+        Dim tableCards = GetCards()
+        Dim cardCount = tableCards.Rows.Count
+        For i = 0 To cardCount - 1
+            Dim cardName = CType(tableCards.Rows(i)(1), String) + CType(tableCards.Rows(i)(0), String)
+            Dim img = CType(imgconv.ConvertFrom(tableCards.Rows(i)(2)), Image)
+            Dim thumbnail = CreateThumbnail(img, width, height)
 
-            original.Dispose()
+            ResultImageList.Images.Add(thumbnail)
+            ResultListView.Items.Add(cardName, i)
+
+            img.Dispose()
             thumbnail.Dispose()
         Next
 

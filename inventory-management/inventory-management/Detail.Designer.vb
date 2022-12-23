@@ -34,6 +34,8 @@ Partial Class Detail
         Me.CardStatusComboBox = New System.Windows.Forms.ComboBox()
         Me.PriceTextBox = New System.Windows.Forms.TextBox()
         Me.CardNameTextBox = New System.Windows.Forms.TextBox()
+        Me.RegisterButton = New System.Windows.Forms.Button()
+        Me.DeleteButton = New System.Windows.Forms.Button()
         CType(Me.CardPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -111,7 +113,7 @@ Partial Class Detail
         Me.CardRarityComboBox.FormattingEnabled = True
         Me.CardRarityComboBox.Location = New System.Drawing.Point(420, 108)
         Me.CardRarityComboBox.Name = "CardRarityComboBox"
-        Me.CardRarityComboBox.Size = New System.Drawing.Size(121, 35)
+        Me.CardRarityComboBox.Size = New System.Drawing.Size(237, 35)
         Me.CardRarityComboBox.TabIndex = 11
         '
         'CardKindComboBox
@@ -120,7 +122,7 @@ Partial Class Detail
         Me.CardKindComboBox.FormattingEnabled = True
         Me.CardKindComboBox.Location = New System.Drawing.Point(420, 163)
         Me.CardKindComboBox.Name = "CardKindComboBox"
-        Me.CardKindComboBox.Size = New System.Drawing.Size(121, 35)
+        Me.CardKindComboBox.Size = New System.Drawing.Size(237, 35)
         Me.CardKindComboBox.TabIndex = 12
         '
         'CardStatusComboBox
@@ -129,7 +131,7 @@ Partial Class Detail
         Me.CardStatusComboBox.FormattingEnabled = True
         Me.CardStatusComboBox.Location = New System.Drawing.Point(420, 218)
         Me.CardStatusComboBox.Name = "CardStatusComboBox"
-        Me.CardStatusComboBox.Size = New System.Drawing.Size(121, 35)
+        Me.CardStatusComboBox.Size = New System.Drawing.Size(237, 35)
         Me.CardStatusComboBox.TabIndex = 13
         '
         'PriceTextBox
@@ -148,11 +150,31 @@ Partial Class Detail
         Me.CardNameTextBox.Size = New System.Drawing.Size(237, 34)
         Me.CardNameTextBox.TabIndex = 15
         '
+        'RegisterButton
+        '
+        Me.RegisterButton.Location = New System.Drawing.Point(461, 377)
+        Me.RegisterButton.Name = "RegisterButton"
+        Me.RegisterButton.Size = New System.Drawing.Size(100, 61)
+        Me.RegisterButton.TabIndex = 16
+        Me.RegisterButton.Text = "編集保存"
+        Me.RegisterButton.UseVisualStyleBackColor = True
+        '
+        'DeleteButton
+        '
+        Me.DeleteButton.Location = New System.Drawing.Point(567, 377)
+        Me.DeleteButton.Name = "DeleteButton"
+        Me.DeleteButton.Size = New System.Drawing.Size(100, 61)
+        Me.DeleteButton.TabIndex = 17
+        Me.DeleteButton.Text = "カード削除"
+        Me.DeleteButton.UseVisualStyleBackColor = True
+        '
         'Detail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(679, 450)
+        Me.Controls.Add(Me.DeleteButton)
+        Me.Controls.Add(Me.RegisterButton)
         Me.Controls.Add(Me.CardNameTextBox)
         Me.Controls.Add(Me.PriceTextBox)
         Me.Controls.Add(Me.CardStatusComboBox)
@@ -185,4 +207,6 @@ Partial Class Detail
     Friend WithEvents CardStatusComboBox As ComboBox
     Friend WithEvents PriceTextBox As TextBox
     Friend WithEvents CardNameTextBox As TextBox
+    Friend WithEvents RegisterButton As Button
+    Friend WithEvents DeleteButton As Button
 End Class

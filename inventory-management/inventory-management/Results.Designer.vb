@@ -39,7 +39,9 @@ Partial Class ResultForm
         '
         'ResultListView
         '
+        Me.ResultListView.Activation = System.Windows.Forms.ItemActivation.OneClick
         Me.ResultListView.HideSelection = False
+        Me.ResultListView.HoverSelection = True
         Me.ResultListView.Location = New System.Drawing.Point(12, 56)
         Me.ResultListView.Name = "ResultListView"
         Me.ResultListView.Size = New System.Drawing.Size(978, 410)

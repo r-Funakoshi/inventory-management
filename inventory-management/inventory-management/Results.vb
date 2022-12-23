@@ -1,8 +1,6 @@
 ﻿Option Strict On
 
 Imports System.Data.SQLite
-Imports System.Drawing.Text
-Imports System.Security.Cryptography.X509Certificates
 
 Public Class ResultForm
     Public Property ConnectString As String = "Data Source = card_stock.db"
@@ -25,7 +23,7 @@ Public Class ResultForm
     ''' データベースのデータを取得
     ''' </summary>
     ''' <returns></returns>
-    Public Function ListDisplay() As DataTable
+    Public Function ListCards() As DataTable
 
         Dim dt As DataTable = New DataTable
 
@@ -57,25 +55,27 @@ FROM card_stock
     ''' <param name="e"></param>
     Private Sub Results_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim imageDirectory = "C:\Users\risa-funakoshi\Documents\repos\inventory-management\images" ' 画像ディレクトリ
-        Dim jpgFiles() =
-        System.IO.Directory.GetFiles(imageDirectory, "*.jpg")
-
         Dim width = 120
         Dim height = 100
+        Dim connection = New Object
+        Dim cards = ListCards()
+        Dim cardCount = cards.Rows.Count
 
         'イメージリストのサイズを指定
-        ImageList1.ImageSize = New Size(width, height)
-        ResultListView.LargeImageList = ImageList1
+        ResultImageList.ImageSize = New Size(width, height)
+        ResultListView.LargeImageList = ResultImageList
 
-        For i = 0 To jpgFiles.Length - 1
-            Dim original = Bitmap.FromFile(jpgFiles(i))
-            Dim thumbnail = CreateThumbnail(original, width, height)
+        Dim imgconv As New ImageConverter()
 
-            ImageList1.Images.Add(thumbnail)
-            ResultListView.Items.Add(jpgFiles(i), i)
+        For i = 0 To cardCount - 1
+            Dim cardName = CType(cards.Rows(i)(0), String)
+            Dim img As Image = CType(imgconv.ConvertFrom(cards.Rows(i)(1)), Image)
+            Dim thumbnail = CreateThumbnail(img, width, height)
 
-            original.Dispose()
+            ResultImageList.Images.Add(thumbnail)
+            ResultListView.Items.Add(cardName, i)
+
+            img.Dispose()
             thumbnail.Dispose()
         Next
 

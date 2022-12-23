@@ -25,7 +25,7 @@ Partial Class ResultForm
         Me.components = New System.ComponentModel.Container()
         Me.SortComboBox = New System.Windows.Forms.ComboBox()
         Me.ResultListView = New System.Windows.Forms.ListView()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.ResultImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
         'SortComboBox
@@ -45,13 +45,12 @@ Partial Class ResultForm
         Me.ResultListView.Size = New System.Drawing.Size(978, 410)
         Me.ResultListView.TabIndex = 2
         Me.ResultListView.UseCompatibleStateImageBehavior = False
-        Me.ResultListView.View = System.Windows.Forms.View.Details
         '
-        'ImageList1
+        'ResultImageList
         '
-        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ResultImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ResultImageList.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ResultImageList.TransparentColor = System.Drawing.Color.Transparent
         '
         'ResultForm
         '
@@ -69,5 +68,5 @@ Partial Class ResultForm
 
     Friend WithEvents SortComboBox As ComboBox
     Friend WithEvents ResultListView As ListView
-    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents ResultImageList As ImageList
 End Class

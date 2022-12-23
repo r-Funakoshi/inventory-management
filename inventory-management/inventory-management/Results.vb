@@ -111,7 +111,6 @@ FROM card_stock
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub test(sender As Object, e As EventArgs) Handles ResultListView.ItemActivate
-        'sender = イベントが起こったのはどこだという情報を持ってきてる
         Dim lv = DirectCast(sender, ListView)
 
         Dim selectIndexNo = lv.FocusedItem.Index

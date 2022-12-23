@@ -34,6 +34,7 @@ Public Class ResultForm
                 cmd.CommandText = "
 SELECT 
   name
+, status
 , image 
 FROM card_stock
 ;"
@@ -66,8 +67,8 @@ FROM card_stock
         Dim tableCards = GetCards()
         Dim cardCount = tableCards.Rows.Count
         For i = 0 To cardCount - 1
-            Dim cardName = CType(tableCards.Rows(i)(0), String)
-            Dim img = CType(imgconv.ConvertFrom(tableCards.Rows(i)(1)), Image)
+            Dim cardName = CType(tableCards.Rows(i)(1), String) + CType(tableCards.Rows(i)(0), String)
+            Dim img = CType(imgconv.ConvertFrom(tableCards.Rows(i)(2)), Image)
             Dim thumbnail = CreateThumbnail(img, width, height)
 
             ResultImageList.Images.Add(thumbnail)

@@ -58,8 +58,8 @@ FROM card_stock
         Dim width = 120
         Dim height = 100
         Dim connection = New Object
-        Dim cards = ListCards()
-        Dim cardCount = cards.Rows.Count
+        Dim tableCards = ListCards()
+        Dim cardCount = tableCards.Rows.Count
 
         'イメージリストのサイズを指定
         ResultImageList.ImageSize = New Size(width, height)
@@ -68,8 +68,8 @@ FROM card_stock
         Dim imgconv As New ImageConverter()
 
         For i = 0 To cardCount - 1
-            Dim cardName = CType(cards.Rows(i)(0), String)
-            Dim img As Image = CType(imgconv.ConvertFrom(cards.Rows(i)(1)), Image)
+            Dim cardName = CType(tableCards.Rows(i)(0), String)
+            Dim img As Image = CType(imgconv.ConvertFrom(tableCards.Rows(i)(1)), Image)
             Dim thumbnail = CreateThumbnail(img, width, height)
 
             ResultImageList.Images.Add(thumbnail)
